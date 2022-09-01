@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_meeting_invitation"
+    tools:context=".activities.IncomingInvitationActivity">
+
+    <ImageView
+        android:id="@+id/imgMeetingTypeIncoming"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvIncomingInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:gravity="center"
+        android:text="@string/incoming_meeting_invitation"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toBottomOf="@+id/imgMeetingTypeIncoming"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvFirstCharIncoming"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22ssp" />
+
+        <TextView
+            android:id="@+id/tvUserNameIncomingInvitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <TextView
+            android:id="@+id/tvEmailIncomingInvitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgAcceptIncoming"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imgDeclineIncoming"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
